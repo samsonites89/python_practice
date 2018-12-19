@@ -34,3 +34,14 @@ def factorial(x):
 print(factorial(3))
 print(factorial(10))
 
+s ='abc'
+it = iter(s)
+# print(it)
+def reverse(data):
+    for index in range(len(data)-1,0,-1):
+        yield data[index]
+        # return data 하면.. 하나의 값만 리턴되는 것을 까먹으면 안된다.
+
+for char in reverse('gold'):
+    print(char)
+
